@@ -24,7 +24,7 @@ To avoid overfitting, a set of dropout layers were applied to the fully connecte
 In order to train the model, a set of images with different time intervals where extracted from a gameplay video of the __CandelaCity__ track. Then, each image was labeled accordingly with their respective classes. These are stored in a folder called dataset.
 
 To train this model from scratch, you have two options: 
-* Download the dataset from <a href="https://drive.google.com/open?id=1W7DgjqPx3PZkEdPDnsxzkKieilURbwv0" target="_blank">here</a>. Once download, unzip it in the same level as the script folder. You must now have a folder called dataset with a folder inside called train. To add more data, you need to capture it from video/images. Here you can use PIL, or another library, just make sure you to capture the images without the top part (as shown in the __Figure 2__).
+* Download the dataset from [here](https://drive.google.com/open?id=1W7DgjqPx3PZkEdPDnsxzkKieilURbwv0). Once download, unzip it in the same level as the script folder. You must now have a folder called dataset with a folder inside called train. To add more data, you need to capture it from video/images. Here you can use PIL, or another library, just make sure you to capture the images without the top part (as shown in the __Figure 2__).
 * Generate your own data. In this case, you can choose the image ratio which you like. However, you must gather all the data from zero.
 
 In both cases, make sure the model is getting the right image. To check that, go the the ```run.py``` file and modify the values from the mss screenshot until you get an adequate image:
