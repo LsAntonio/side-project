@@ -17,7 +17,7 @@ Note that this project was only tested with Ubuntu 16.04 LTS. Therefore it may n
 
 # Model Architecture:
 The model is composed by an alexnet model, which was fine-tuned. The model receives an input with shape: 224 x 224 x 3, where the two first elements represent the width and hight, and the last one, the number of channels. Also, the last part of the original model has been replaced with a set of fully connected layers. A representation of the model can be visualized in the figure below:
-
+![Model Architecture](figure_1.png)
 
 
 
