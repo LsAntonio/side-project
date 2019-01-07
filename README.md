@@ -37,7 +37,7 @@ elif screen == 'l':
   # take a left screenshot
   monitor = {"top": 145, "left": 70, "width": 1018, "height": 620}
 ````
-Now, you can use the ```training.py``` file. It would require to input the number of epochs to train (make sure you have enough free space in your hard drive). Also, the model is defined in the ```model_helper.py``` file. There you can change the model’s parameters like:  batch size, learning rate, optimizer, etc.
+Now, you can use the ```training.py``` file. It will requires to input the number of epochs to train (make sure you have enough free space in your hard drive). Also, the model is defined in the ```model_helper.py``` file. There you can change the model’s parameters like:  batch size, learning rate, optimizer, etc.
 
 You can also check the model(s) performance with the ```eval_model.py``` file. Finally, you can display a plot of the loss of the entire training with the ```plot.py``` file.
 
