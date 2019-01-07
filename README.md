@@ -69,13 +69,13 @@ Go to the script folder, open a terminal and type: ```python run.py```. On the t
 
 To select an orientation, type their first letter (r or l), then press enter. Now, insert the number of steps to run, I recommended about 500 for this track.
 
-If you downloaded the models, you must have two available trained models in the list selection. The best results are obtained with the second model (loss ~ 0.26). However, both models have difficulties before reaching the final. To select one, type their number, and press enter.
+If you downloaded the models, you must have two available trained models in the list selection. The best results are obtained with the second model (loss ~ 0.26). To select one, type their number, and press enter.
 
-Now, go to the game, and press star race. Set a number of seconds to wait before start the script. Once done, make sure you have the game as an active window (click on the game), otherwise the model will began to send keys to whatever window is active!
+Now, go to the game, and press start race. Set a number of seconds to wait before start the script. Once done, make sure you have the game as an active window (click on the game), otherwise the model will began to send keyboard keys to whatever window is active!
 
 The script will terminate once:
-*  The model recognize the game is over or,
-*  The maximum number of steps is reached
+*  The model has detected the race is over or,
+*  The maximum number of steps was reached
 In any case, to terminate the script manually, simply go back to the terminal and cancel the execution (crtl + c)
 
 # Results:
