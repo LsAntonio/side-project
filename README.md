@@ -1,6 +1,5 @@
 # Self-KartDriving
-
-
+This project was developed as result of the 2018 pythonscholarsip. Here, a pre-trained model was fine-tuned to learn to self-drive in the SuperTuxKart game.
 
 # Requirements:
 To train and running this project, you can use Anaconda 64-Bit with python 3.7. Then, create a virtual environment and install the following:
@@ -46,5 +45,42 @@ Here is an example of using all the training scripts:
 <p align="center">
 <a href="https://youtu.be/Vl6mrSCoWhg" target="_blank">
   <img src="https://drive.google.com/uc?export=view&id=1RziMx0sFIQ9qLLZZLnsyy-M5KA-ZULZL" alt="Training" width = "500", height = "250">
+</a>
+</p>
+
+# Running:
+## Initial game configuration
+__This step need to be done only once__. First, make sure you have installed SuperTuxKart version 0.9.3. Then, in order to run the project, you need to configure the screen resolution of the game. For that, open the game and go to the options at the bottom of the main screen, then go to Graphics:
+
+*  Deactivate the full screen option.
+*  Set the resolution to 1024 x 768 (ratio 4:3).
+*  Then click on Apply new resolution.
+*  It is recommendable to low the graphics quality. In the same window go to Custom settings and disable the option Advadcend pipeline (lights, etc.), also set the Rendered image quality and geometric detail to Low, then click on Apply.
+
+## Script execution
+Before running the script, make sure you have the game already configured as described in the __Initial game configuration section__. Also, you must have a trained model to run. You can download two models from [here](https://drive.google.com/open?id=1QolDRlcU6tqQoWQkLLesQ0gya6DAAx7M). Once downloaded, unzip them on the same level as the script folder. You must have now a folder called models.
+
+Next, open the game and select the single player option. In the kart selection, select Kiki (Cyber Squirrel), if you do not have it, you can installed it in addons > karts > Kiki Cyber Squirrel by 3DMish | From TysonTan’s Images.
+
+Now, on the Race Setup window, select the __Novice__ difficulty, and the __Time Trial__ mode. Next, on the Track window, select the track named: __CandelaCity__. On the next screen set the number of AI karts to 0 and the number of laps as 1.
+
+Go to the script folder, open a terminal and type: ```python run.py```. On the terminal select the game screen position. It could be right or left. You can see an example of each one in the following image:
+![Game orientation](figure_3.png)
+
+To select an orientation, type their first letter (r or l), then press enter. Now, insert the number of steps to run, I recommended about 500 for this track.
+
+If you downloaded the models, you must have two available trained models in the list selection. The best results are obtained with the second model (loss ~ 0.26). However, both models have difficulties before reaching the final. To select one, type their number, and press enter.
+
+Now, go to the game, and press star race. Set a number of seconds to wait before start the script. Once done, make sure you have the game as an active window (click on the game), otherwise the model will began to send keys to whatever window is active!
+
+The script will terminate once:
+*  The model recognize the game is over or,
+*  The maximum number of steps is reached
+In any case, to terminate the script manually, simply go back to the terminal and cancel the execution (crtl + c)
+
+# Results:
+<p align="center">
+<a href="https://youtu.be/3-iMFt9lsOg" target="_blank">
+  <img src="https://drive.google.com/uc?export=view&id=1wn1WpRy6n-5f1nQTEEkJPnhs6apO--SK" alt="Training" width = "500", height = "300">
 </a>
 </p>
