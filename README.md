@@ -20,4 +20,4 @@ The model is composed by an alexnet model, which was fine-tuned. The model recei
 ![Model Architecture](figure_1.png)
 
 To avoid overfitting, a set of dropout layers were applied to the fully connected section of the model, with a probability of 70%. There was a total of five defined classes, four of them represent the basic actions that the model can take on the game, this actions are: turn to the left, turn to the right, accelerate and return. The last class indicates when the race is over, and is used to stop the main script. These classes can be visualized in the figure below:
-![Model Classes](figure_2.png)
+
